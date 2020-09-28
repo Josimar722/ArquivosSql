@@ -65,7 +65,9 @@ select * from tb_produtos where nomeProduto like "%Co%";
 
 -- Buscar informações em outra tabela e trazer para a tabela atual
 
-
+select * from tb_produtos 
+inner join tb_categoria on tb_categoria.id_categoria
+ = tb_categoria.id_categoria group by nomeProduto order by id;
 
 
 

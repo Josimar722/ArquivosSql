@@ -1,13 +1,13 @@
 
 use db_ecommerce;
 
-
+drop table tb_categoria;
 CREATE TABLE `tb_categoria` (
-   id bigint NOT NULL AUTO_INCREMENT,
+   id_categoria bigint NOT NULL AUTO_INCREMENT,
    eletro varchar(10) not NULL,
    categoria int NOT NULL,
-  KEY `id` (`id`),
-  CONSTRAINT categoria FOREIGN KEY (`id`) REFERENCES `tb_produtos` (`id`)
+   primary key(id_categoria)
+  
 ) ;
 
 -- Buscando dados da tabela cargo
@@ -37,5 +37,7 @@ INSERT INTO `tb_categoria` (eletro,categoria)VALUES ('Casa',15);
 
 SELECT * FROM db_ecommerce.tb_produtos,tb_categoria group by nomeProduto;
 
-
+select * from tb_produtos 
+inner join tb_categoria on tb_categoria.id_categoria
+ = tb_categoria.id_categoria;
 

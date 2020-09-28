@@ -1,3 +1,7 @@
+CREATE TABLE `tb_cargo` (
+  `idtb_cargo` int NOT NULL,
+  PRIMARY KEY (`idtb_cargo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 -- Criando banco
 
 create database db_loja;

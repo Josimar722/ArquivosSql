@@ -66,3 +66,6 @@ SELECT * FROM db_rh2.tb_cargo,tb_funcionario;
 
 
 
+
+
+
